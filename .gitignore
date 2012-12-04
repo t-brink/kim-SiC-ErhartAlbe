@@ -1,0 +1,5 @@
+/Tersoff_SiC_ErhartAlbe.cpp
+/Tersoff_SiC_ErhartAlbe.kim
+*.a
+*.o
+*.so

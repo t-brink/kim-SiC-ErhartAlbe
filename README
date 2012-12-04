@@ -1,0 +1,12 @@
+Tersoff-style potential for silicon, carbon and silicon carbide.
+
+Parameters from
+Erhart and Albe
+"Analytical potential for atomistic simulations of silicon, carbon,
+and silicon carbide"
+Phys. Rev. B 71 (2005), 035211
+
+Parameter file copied as-is from LAMMPS, see comments in the file for
+details.
+
+Contact: brink@mm.tu-darmstadt.de
