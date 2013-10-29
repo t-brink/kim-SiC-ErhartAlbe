@@ -10,16 +10,12 @@
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 # General Public License for more details.
 
+include ../Makefile.KIM_Config
+
 MODEL_DRIVER_NAME   := model_driver_Tersoff
 MODEL_NAME          := Tersoff_SiC_ErhartAlbe
 SPECIES_001_NAME    := Si
 SPECIES_002_NAME    := C
 PARAM_FILE_001_NAME := $(strip $(MODEL_NAME)).params
 
-# No changes should be needed below this line.
-
-ifndef KIM_API_DIR
-   include $(KIM_DIR)/KIM_API/Makefile.Model_Drivers
-else
-   include $(KIM_API_DIR)/Makefile.Model_Drivers
-endif
+include $(KIM_DIR)/MAKE_SYSTEM/Makefile.ParameterizedModel
