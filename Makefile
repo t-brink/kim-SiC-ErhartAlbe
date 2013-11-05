@@ -12,8 +12,8 @@
 
 include ../Makefile.KIM_Config
 
-MODEL_DRIVER_NAME   := model_driver_Tersoff
-MODEL_NAME          := Tersoff_SiC_ErhartAlbe
+MODEL_DRIVER_NAME   := Tersoff_LAMMPS__MD_077075034781_000
+MODEL_NAME          := Tersoff_LAMMPS_Erhart_Albe_CSi__MO_903987585848_000
 SPECIES_001_NAME    := Si
 SPECIES_002_NAME    := C
 PARAM_FILE_001_NAME := $(strip $(MODEL_NAME)).params
