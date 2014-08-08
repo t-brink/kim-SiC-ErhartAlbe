@@ -10,12 +10,15 @@
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
 # General Public License for more details.
 
+ifeq ($(wildcard ../Makefile.KIM_Config),)
+  $(error ../Makefile.KIM_Config does not exist.  Something is wrong with your KIM API package setup)
+endif
 include ../Makefile.KIM_Config
 
-MODEL_DRIVER_NAME   := Tersoff_LAMMPS__MD_077075034781_000
-MODEL_NAME          := Tersoff_LAMMPS_Erhart_Albe_CSi__MO_903987585848_000
+MODEL_DRIVER_NAME   := Tersoff_LAMMPS__MD_077075034781_001
+MODEL_NAME          := Tersoff_LAMMPS_Erhart_Albe_CSi__MO_903987585848_001
 SPECIES_001_NAME    := Si
 SPECIES_002_NAME    := C
-PARAM_FILE_001_NAME := $(strip $(MODEL_NAME)).params
+PARAM_FILE_001_NAME := Tersoff_SiC_ErhartAlbe.params
 
-include $(KIM_DIR)/MAKE_SYSTEM/Makefile.ParameterizedModel
+include $(KIM_DIR)/$(builddir)/Makefile.ParameterizedModel
