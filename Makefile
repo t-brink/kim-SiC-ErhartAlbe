@@ -15,8 +15,8 @@ ifeq ($(wildcard ../Makefile.KIM_Config),)
 endif
 include ../Makefile.KIM_Config
 
-MODEL_DRIVER_NAME   := Tersoff_LAMMPS__MD_077075034781_001
-MODEL_NAME          := Tersoff_LAMMPS_Erhart_Albe_CSi__MO_903987585848_001
+MODEL_DRIVER_NAME   := Tersoff_LAMMPS__MD_077075034781_002
+MODEL_NAME          := Tersoff_LAMMPS_Erhart_Albe_CSi__MO_903987585848_002
 SPECIES_001_NAME    := Si
 SPECIES_002_NAME    := C
 PARAM_FILE_001_NAME := Tersoff_SiC_ErhartAlbe.params
